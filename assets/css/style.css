@@ -185,7 +185,7 @@ body {
 .sidebar,
 article {
   background: var(--eerie-black-2);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--glass-border);
   border: 1px solid var(--jet);
   border-radius: 20px;
