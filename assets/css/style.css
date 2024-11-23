@@ -118,7 +118,20 @@
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
   --glass-border: rgba(255, 255, 255, 0.2);
-  
+  .pattern-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, transparent 25%, #141414 26%), linear-gradient(0deg, transparent 44%, #22c7a979 45%, #25dab35c 55%, transparent 56%), linear-gradient(90deg, transparent 44%, #2cd59a5c 45%, #2eeab86f 55%, transparent 56%);
+        background-size: 1em 1em;
+        background-color: #0a0a0a;
+        opacity: 1
+      background-size: 20px 20px;
+      pointer-events: none;
+      z-index: -1;
+    }
 
 }
 
@@ -165,18 +178,6 @@ input, textarea {
 :focus { outline-color: var(--orange-yellow-crayola); }
 
 html { font-family: var(--ff-poppins); }
-body {
-  
-  background: radial-gradient(circle, transparent 25%, #141414 26%), linear-gradient(0deg, transparent 44%, #22c7a979 45%, #25dab35c 55%, transparent 56%), linear-gradient(90deg, transparent 44%, #2cd59a5c 45%, #2eeab86f 55%, transparent 56%);
-    background-size: 1em 1em;
-    background-color: #0a0a0a;
-    opacity: 1
-}
-
-
-
-
-
 
 /*-----------------------------------*\
   #REUSED STYLE
