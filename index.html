@@ -583,5 +583,11 @@ I am currently looking for possibilities to expand my knowledge and obtain pract
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
+<script>
+  document.addEventListener("copy", (event) => {
+    const selectedData = window.getSelection().toString();
+    event.clipboardData.setData("text/plain", "Nice try, but you can't copy this content!");
+    event.preventDefault();
+  }) 
+</script>
 </html>
